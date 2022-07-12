@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 @Configuration
-@ConfigurationProperties( prefix = "accounts" )
+@ConfigurationProperties( prefix = "card.service" )
 @Data
 public class CardServiceConfig {
 
