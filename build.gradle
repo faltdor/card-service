@@ -7,6 +7,8 @@ plugins {
 group = 'com.faltdor'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+def projectName = 'account-service'
+def organizationName = 'faltdor'
 
 configurations {
 	compileOnly {
@@ -43,4 +45,8 @@ dependencyManagement {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+bootBuildImage {
+	imageName = "${organizationName}/${projectName}"
 }
